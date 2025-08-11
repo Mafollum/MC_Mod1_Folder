@@ -2,6 +2,7 @@ package net.max.mcmod1;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.max.mcmod1.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class McMod1 implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+        ModItems.registerModItems();    //calls for all Items when initializing (function in ModItems)
 	}
-}
+    }
