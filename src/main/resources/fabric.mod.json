@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mcmod1",
+	"version": "${version}",
+	"name": "McMod1",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Stephan und Max"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mcmod1/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.max.mcmod1.McMod1"
+		],
+      "client": [
+        "net.max.mcmod1.McMod1Client"
+      ],
+		"fabric-datagen": [
+			"net.max.mcmod1.McMod1DataGenerator"
+		]
+	},
+	"mixins": [
+		"mcmod1.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
