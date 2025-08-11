@@ -34,11 +34,4 @@ public class ModItems {
         entries.add(RUBY);
     }
 
-
-
-
-
-
-
-
 }
